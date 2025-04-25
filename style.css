@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;  /* More modern font */
+    line-height: 1.7;             /* Improved line height for readability */
+    margin: 0;                   /* Remove default body margin */
+    padding: 0;
+    background-color: #f0f0f0;  /* Slightly different background */
+    color: #444;                 /* Darker text for better contrast */
+}
+
+/* Added to body */
+.container {
+    max-width: 1000px; /* Increased max-width */
+    margin: 20px auto;
+    padding: 0 20px; /* Added padding for smaller screens */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #4CAF50; /* Green nav bar */
+    padding: 15px 0;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Increased margin */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600; /* Make links bold */
+    text-transform: uppercase; /* Uppercase links */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: #f0f0f0; /* Slightly lighter hover color */
+    text-decoration: underline;
+}
+
+/* Article Styles */
+article {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+}
+
+header p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+header time {
+    font-style: italic;
+    color: #888;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out; /* Added transition */
+}
+
+img:hover {
+    transform: scale(1.03); /* slight scale on hover */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #2c3e50; /* Darker heading color */
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    font-size: 2em; /* Larger heading */
+}
+
+section h4 {
+    color: #34495e; /* Darker sub-heading */
+    margin-top: 15px;
+    font-size: 1.3em;
+}
+
+section p {
+    margin-bottom: 1.1em;
+    color: #555;
+}
+
+section em {
+    font-style: italic;
+    color: #7f8c8d; /* Muted italic color */
+}
+
+section strong {
+    font-weight: bold;
+    color: #2c3e50; /* Strong font color */
+}
+
+/* List Styles */
+section ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    padding-left: 5px;
+}
+
+section ul li{
+   margin-bottom: 8px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* for rounded corners of thead/tbody */
+}
+
+table thead {
+    background-color: #3498db; /* Blue header */
+    color: #fff;
+    font-weight: bold;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: left;
+}
+
+table th i {
+    font-weight: normal;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ecf0f1; /* Very light background */
+}
+
+table tbody tr:hover {
+    background-color: #d4e6f1; /* Light blue hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 25px 0;
+    background-color: #34495e; /* Darker footer */
+    color: #fff;
+    border-top: 5px solid #2c3e50; /* Darker top border */
+    border-radius: 8px 8px 0 0;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.8em; /* Increased icon size */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffdb58; /* Gold hover for social icons */
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #eee;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+    body {
+        margin: 0; /* Remove body margin on small screens */
+        padding: 0;
+    }
+    .container{
+       padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    nav ul li a{
+        font-size: 1.2em;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    section h2{
+        font-size: 1.75em;
+    }
+    section h4{
+        font-size: 1.125em;
+    }
+}
